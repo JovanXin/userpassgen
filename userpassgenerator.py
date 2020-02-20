@@ -7,6 +7,7 @@ wordsite = "http://svnweb.freebsd.org/csrg/share/dict/words?view=co&content-type
 response = requests.get(wordsite)
 wordlist = response.content.splitlines()
 
+# Generates a username
 def generate_username():
   date = datetime.datetime.now() #getting current time
   year = (date.year) #getting the year
